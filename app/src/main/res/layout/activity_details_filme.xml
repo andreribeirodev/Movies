@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".view.activities.FilmeDetailsActivity">
+
+        <ImageView
+            android:id="@+id/imageViewBanner"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:elevation="12dp"
+            android:src="@color/cardview_dark_background"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageViewSecondPoster"
+            android:layout_width="130dp"
+            android:layout_height="190dp"
+            android:layout_marginStart="12dp"
+            android:elevation="12dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="@+id/imageViewBanner"
+            app:layout_constraintStart_toStartOf="@+id/imageViewBanner"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewBanner"
+            tools:srcCompat="@tools:sample/avatars" />
+
+
+        <TextView
+            android:id="@+id/textViewTituloFilme"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:maxLines="2"
+            android:textColor="@color/color_primary_ntt_second"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageViewSecondPoster"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewBanner"
+            tools:text="Nome do Filme" />
+
+        <RatingBar
+            android:id="@+id/rateBarFilme"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:isIndicator="true"
+            android:numStars="5"
+            android:progressTint="@color/color_primary_ntt_second"
+            android:scaleX="1.0"
+            android:scaleY="1.0"
+            android:stepSize="0.5"
+            app:layout_constraintStart_toStartOf="@id/textViewTituloFilme"
+            app:layout_constraintTop_toBottomOf="@id/textViewTituloFilme" />
+
+        <TextView
+            android:id="@+id/textViewDateLaunch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="@id/rateBarFilme"
+            app:layout_constraintTop_toBottomOf="@id/rateBarFilme"
+            tools:text="22/10/1994" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Sinopse"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/imageViewSecondPoster"
+            app:layout_constraintTop_toBottomOf="@id/imageViewSecondPoster" />
+
+
+        <TextView
+            android:id="@+id/textViewOverview"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/textView"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            tools:text="Mussum Ipsum, cacilds vidis litro abertis. Interagi no mé, cursus quis, vehicula ac nisi.Quem manda na minha terra sou euzis!Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.Quem num gosta di mé, boa gentis num é." />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
