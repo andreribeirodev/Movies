@@ -19,3 +19,4 @@ Um desafio e tanto, espero continuar evoluindo e poder contribuir sempre quando 
 
 
 -----------------------------------------------------------------------------------------------------------
+Este aplicativo não passará por atualizações.
